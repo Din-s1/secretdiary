@@ -1,7 +1,7 @@
 
 # __Secret Diary Project__
 
-## Project Ouline
+## Project Outline
 ---
 ### SecretDiary
   - lock
@@ -29,10 +29,10 @@ When the user calls `lock` again they throw errors again.
 ## Feature Test
 
 ##### FT-1
-Try load the secret_diary
+- Try load the secret_diary
 load './lib/secret_diary.rb'
 ##### FT-2
-Create an instance of 'Diary'
+- Create an instance of 'Diary'
 load './lib/secret_diary.rb'
 shush = Diary.new
 ##### FT-3
@@ -54,8 +54,11 @@ shush = Diary.new
 shush.unlock
 Should state 'now unlocked' and allow 'get' and 'add' to function.
 ##### FT-5
-load './lib/secret_diary.rb'
+- load './lib/secret_diary.rb'
 shush = Diary.new
-shush.UNLOCK
+UNLOCK should return true
 shush.add_entry
 Should now respond
+##### FT-6
+- load './lib/secret_diary.rb'
+shush = Diary.new
