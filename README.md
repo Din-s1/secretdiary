@@ -29,36 +29,36 @@ When the user calls `lock` again they throw errors again.
 ## Feature Test
 
 ##### FT-1
-- Try load the secret_diary
-load './lib/secret_diary.rb'
+- Try load the secret_diary <br/>
+load './lib/secret_diary.rb' <br/>
 ##### FT-2
-- Create an instance of 'Diary'
-load './lib/secret_diary.rb'
-shush = Diary.new
+- Create an instance of 'Diary' <br/>
+load './lib/secret_diary.rb' <br/>
+shush = Diary.new <br/>
 ##### FT-3
-- comment diary is locked when instantiated
-load './lib/secret_diary.rb'
-shush = Diary.new
-shush.add_entry
-Should raise error
+- comment diary is locked when instantiated <br/>
+load './lib/secret_diary.rb' <br/>
+shush = Diary.new <br/>
+shush.add_entry <br/>
+Should raise error <br/>
 ##### FT-4
-- comment diary is locked when instantiated
-load './lib/secret_diary.rb'
-shush = Diary.new
-shush.get_entries
-Should raise error
+- comment diary is locked when instantiated <br/>
+load './lib/secret_diary.rb' <br/>
+shush = Diary.new <br/>
+shush.get_entries <br/>
+Should raise error <br/>
 ##### FT-5
-- comment diary is locked when instantiated
-load './lib/secret_diary.rb'
-shush = Diary.new
-shush.unlock
-Should state 'now unlocked' and allow 'get' and 'add' to function.
-##### FT-5
-- load './lib/secret_diary.rb'
-shush = Diary.new
-UNLOCK should return true
-shush.add_entry
-Should now respond
+- comment diary is locked when instantiated <br/>
+load './lib/secret_diary.rb' <br/>
+shush = Diary.new <br/>
+shush.unlock <br/>
+Should state 'now unlocked' and allow 'get' and 'add' to function. <br/>
 ##### FT-6
-- load './lib/secret_diary.rb'
-shush = Diary.new
+- load './lib/secret_diary.rb' <br/>
+shush = Diary.new <br/>
+UNLOCK should return true <br/>
+shush.add_entry <br/>
+Should now respond <br/>
+##### FT-7
+- load './lib/secret_diary.rb' <br/>
+shush = Diary.new <br/>
